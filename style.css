@@ -7,22 +7,20 @@
 }
 body{
     line-height: 1.7;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    margin: 0;
+    
 }
 footer{
   background-color: #333;
   color: #ffff;
   text-align: center;
   padding: 1rem;
+  line-height: 1.7;
 }
 header{
     box-shadow: 0 2px 5x rgba(0, 0, 0, 0.1);
 
 }
-nav{
+nav1{
   display: flex;
   justify-content: space-between;
   align-items: center;
