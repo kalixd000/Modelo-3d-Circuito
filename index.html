@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es-MX">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav1>
@@ -14,6 +16,7 @@
                 <li><a href="https://kalixd000.github.io/Robotics/">inicio</a></li>
                 <li><a href="https://kalixd000.github.io/modelo/">Modelos</a></li>
                 <li><a href="https://kalixd000.github.io/Proceso/">Proceso</a></li>
+                <li><a href="https://kalixd000.github.io/Continuidad/">Futuro</a></li>
             </ul>
         </nav1>
     </header>
@@ -23,17 +26,46 @@
         </nav>
     </header>
     <div class="card">
-    <img src="/Circuito/circuito.jpeg">
+        <img src="https://raw.githubusercontent.com/kalixd000/Modelo-3d-Circuito/main/cicuitoex.png">
 
-      <div1 class="info">
-        <h2>Maqueta 3D INCLUSEM</h2>
-    </div1>
- <p class="Parrafo" style="text-align: justify;">Para representar el semaforo "Inclusem", en equipo, se decidio hacer una
-            maqueta de como estaria en una calle normal.
-</p>
-</div>
+        <div1 class="info">
+            <h2>Circuito INCLUSEM</h2>
+        </div1>
+        <p class="Parrafo">Para representar el semaforo "Inclusem", en equipo, se decidio
+            hacer una
+            maqueta de como estaria en una calle normal.<br><br>
+            La pata positiva del LED se conecta al pin correspondiente del Arduino y la negativa va hacia el riel de
+            tierra (GND) de la protoboard, asegurándose de que la corriente fluya correctamente. Esto permite que los
+            LEDs funcionen de manera segura y evita daños tanto al LED como al Arduino.<br><br>
+
+            Luego, se conecta el sensor ultrasónico HC-SR04, el cual sirve para detectar la presencia de vehículos o
+            peatones cerca del semáforo. Este sensor tiene cuatro pines: VCC, GND, Trig y Echo.<br><br>
+
+            VCC se conecta a 5V del Arduino.<br>
+            GND se conecta a tierra (GND).<br>
+            Trig se conecta a un pin digital del Arduino (por ejemplo, el pin 9).<br>
+            Echo se conecta a otro pin digital (por ejemplo, el pin 10).<br><br>
+
+            El sensor envía un pulso ultrasónico que rebota en un objeto cercano y vuelve al sensor, permitiendo al
+            Arduino calcular la distancia mediante el tiempo que tarda en recibir el eco.<br><br>
+
+            A continuación, se incorpora el buzzer, que sirve para emitir un sonido de advertencia cuando el semáforo
+            cambia a rojo o cuando se detecta la presencia de un vehículo o peatón. El buzzer tiene dos pines: uno
+            positivo que se conecta a un pin digital del Arduino (por ejemplo, el pin 8) y otro negativo a GND.<br><br>
+
+            Con todos los componentes conectados en la protoboard mediante cables jumper, se procede a cargar el código
+            en el Arduino. El programa controla la secuencia de los LEDs (rojo, amarillo y verde), monitorea la
+            distancia detectada por el sensor ultrasónico y activa el buzzer cuando sea necesario. De esta forma, se
+            logra un semáforo inteligente que responde al tráfico real, aumentando la seguridad vial y la eficiencia en
+            la circulación.
+
+
+
+        </p>
+    </div>
     <footer>
         <p>&copy; Cecyte Playas de Tijuana. Todos los derechos reservados</p>
     </footer>
 </body>
+
 </html>
